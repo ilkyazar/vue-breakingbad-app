@@ -1,0 +1,14 @@
+@import 'reset';
+@import 'derived';
+@import 'variables';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family-base;
+}
+
+h1 {
+}

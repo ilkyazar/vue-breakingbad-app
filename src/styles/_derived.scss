@@ -1,0 +1,12 @@
+@import 'variables';
+
+$primary-color: $yellow;
+$base-color: $black;
+$secondary-color: lighten($primary-color, 40%);
+
+$font-size-h1: 2.75 * $font-size-base;
+$font-size-h2: 2.25 * $font-size-base;
+$font-size-h3: 1.75 * $font-size-base;
+$font-size-h4: 1.5 * $font-size-base;
+$font-size-h5: 1.25 * $font-size-base;
+$font-size-h6: 0.875 * $font-size-base;
