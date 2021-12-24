@@ -1,6 +1,5 @@
 <template>
   <div class="characters">
-    <h1>Characters</h1>
     <CardList :items="characterList" />
   </div>
 </template>
@@ -27,7 +26,7 @@ export default {
           // Code that will run only after the
           // entire view has been rendered
           this.characterList = data;
-        });        
+        });
       });
   },
 };

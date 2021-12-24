@@ -39,7 +39,9 @@ const routes = [
         path: ":id",
         name: routeNames.episodeDetails,
         component: () =>
-          import(/* webpackChunkName: "episodes" */ "../views/EpisodeDetails.vue"),
+          import(
+            /* webpackChunkName: "episodes" */ "../views/EpisodeDetails.vue"
+          ),
       },
     ],
   },

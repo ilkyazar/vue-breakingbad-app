@@ -1,14 +1,34 @@
-@import 'reset';
-@import 'derived';
-@import 'variables';
+@import "reset";
+@import "derived";
+@import "variables";
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: $font-family-base;
+  font-family: $font-family-base;
+  background: #272727;
+  color: white;
 }
 
-h1 {
+.nav {
+  left: 50%;
+}
+
+.nav a {
+  color: #f6f4e6;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  padding: 14px 16px;
+}
+
+.nav a:hover {
+  color: #fddb3a;
 }

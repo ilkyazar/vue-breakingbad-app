@@ -6,4 +6,3 @@ export const routeNames = {
   episodes: "Episodes",
   episodeDetails: "EpisodeDetails",
 };
-

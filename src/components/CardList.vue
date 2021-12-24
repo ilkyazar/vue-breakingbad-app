@@ -3,13 +3,16 @@
     <li v-for="character in items" :key="character.char_id">
       <router-link
         v-if="character"
-        :to="{ name: computedRouteNames.characterDetails, params: { id: character.char_id } }"
+        :to="{
+          name: computedRouteNames.characterDetails,
+          params: { id: character.char_id },
+        }"
       >
         <Card :item="character" />
       </router-link>
     </li>
   </ul>
-  <p v-else>Empty</p>
+  <div v-else class="loader">Loading...</div>
 </template>
 
 <script>
@@ -27,14 +30,16 @@ export default {
     },
   },
   computed: {
-    computedRouteNames: function() {
+    computedRouteNames: function () {
       return routeNames;
-    }
-  }
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
+@import "@/styles/loader.scss";
+
 .card-list {
   list-style: none;
   margin: 0;
@@ -44,6 +49,9 @@ export default {
   li {
     width: 100%;
     padding: 10px;
+    a {
+      text-decoration: none;
+    }
   }
 }
 

@@ -1,6 +1,5 @@
 <template>
   <div class="episodes">
-    <h1>Episodes</h1>
     <div class="content">
       <ul>
         <li v-for="episode in episodes" :key="episode.episode_id">
@@ -33,7 +32,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/styles/list.scss";
+
+.episodes {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
 .content {
   display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 </style>
